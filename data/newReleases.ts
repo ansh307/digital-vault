@@ -1,0 +1,42 @@
+export const newReleases = [
+  {
+    id: 1,
+    title: "Neon City LUTs",
+    category: "LUTs Collection",
+    price: 24,
+    image: "/product-1.jpg",
+    tools: ["Pr", "Ae"],
+  },
+  {
+    id: 2,
+    title: "Cinematic SFX Pack",
+    category: "Sound Effects",
+    price: 19,
+    image: "/product-1.jpg",
+    tools: ["Audio"],
+  },
+  {
+    id: 3,
+    title: "Typography Pack Vol. 2",
+    category: "After Effects Template",
+    price: 29,
+    image: "/product-1.jpg",
+    tools: ["Ae"],
+  },
+  {
+    id: 4,
+    title: "Travel Preset Pack",
+    category: "Lightroom Presets",
+    price: 17,
+    image: "/product-1.jpg",
+    tools: ["Lr"],
+  },
+  {
+    id: 5,
+    title: "3D Icon Pack",
+    category: "3D Assets",
+    price: 39,
+    image: "/product-1.jpg",
+    tools: ["3D"],
+  },
+];
