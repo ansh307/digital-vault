@@ -1,0 +1,45 @@
+export const products = [
+  {
+    id: 1,
+    title: "Cinematic Video Bundle",
+    desc: "50+ Overlays, Transitions, LUTs & More",
+    price: 49,
+    image: "/product-1.jpg",
+    badge: "BEST SELLER",
+    tools: ["Pr", "Ae"],
+  },
+  {
+    id: 2,
+    title: "Motion Graphics Pack",
+    desc: "100+ Templates for Premiere Pro & After Effects",
+    price: 39,
+    image: "/product-2.jpg",
+    tools: ["Ae"],
+  },
+  {
+    id: 3,
+    title: "Sound FX Mega Pack",
+    desc: "10,000+ High Quality Sound Effects",
+    price: 29,
+    image: "/product-3.jpg",
+    tools: ["Audio"],
+  },
+  {
+    id: 4,
+    title: "Premium LUTs Bundle",
+    desc: "100+ Professional LUTs for Any Camera",
+    price: 24,
+    image: "/product-4.jpeg",
+    tools: ["Lr"],
+  },
+
+  {
+    id: 5,
+    title: "Video Editing Course",
+    desc: "Complete Step-by-Step Editing Masterclass",
+    price: 59,
+    image: "/product-5.jpg",
+    badge: "NEW",
+    tools: ["Course"],
+  },
+];
