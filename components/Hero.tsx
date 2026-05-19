@@ -179,7 +179,8 @@ export default function Hero() {
     </section>
   );
 }
-function Feature({
+
+export function Feature({
   icon,
   title,
   desc,
