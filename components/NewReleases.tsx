@@ -1,9 +1,6 @@
-"use client";
-
 import { newReleases } from "@/data/newReleases";
 import { NewReleaseCard } from "./NewReleaseCard";
 import { ArrowRight } from "lucide-react";
-import { useRef } from "react";
 
 export default function NewReleases() {
   return (
