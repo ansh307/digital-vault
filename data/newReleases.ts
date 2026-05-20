@@ -12,7 +12,7 @@ export const newReleases = [
     title: "Cinematic SFX Pack",
     category: "Sound Effects",
     price: 19,
-    image: "/product-1.jpg",
+    image: "/product-2.jpg",
     tools: ["Audio"],
   },
   {
@@ -20,7 +20,7 @@ export const newReleases = [
     title: "Typography Pack Vol. 2",
     category: "After Effects Template",
     price: 29,
-    image: "/product-1.jpg",
+    image: "/product-3.jpg",
     tools: ["Ae"],
   },
   {
@@ -28,7 +28,7 @@ export const newReleases = [
     title: "Travel Preset Pack",
     category: "Lightroom Presets",
     price: 17,
-    image: "/product-1.jpg",
+    image: "/product-4.jpeg",
     tools: ["Lr"],
   },
   {
@@ -36,7 +36,7 @@ export const newReleases = [
     title: "3D Icon Pack",
     category: "3D Assets",
     price: 39,
-    image: "/product-1.jpg",
+    image: "/product-5.jpg",
     tools: ["3D"],
   },
 ];
