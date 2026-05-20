@@ -1,9 +1,13 @@
 import Image from "next/image";
 import { ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
 export function ProductCard({ product }: any) {
   return (
-    <div className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition">
+    <Link
+      href={`/product/${product.id}`}
+      className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition"
+    >
       {/* IMAGE */}
       <div className="relative w-full h-40">
         <Image
@@ -47,6 +51,6 @@ export function ProductCard({ product }: any) {
           </button>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

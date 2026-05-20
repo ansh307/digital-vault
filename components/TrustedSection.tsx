@@ -79,7 +79,7 @@ export default function TrustedSection() {
                 ))}
               </div>
 
-              <div className="w-14 h-14 -ml-2 flex items-center justify-center rounded-full bg-purple-100 text-purple-600 text-sm font-medium border-2 border-white">
+              <div className="w-14 h-14 -ml-2 flex items-center justify-center rounded-full bg-indigo-100 text-indigo-600 text-sm font-medium border-2 border-white">
                 +3K
               </div>
             </div>
