@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Sparkle,
   Sparkles,
@@ -11,6 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ScrollButton } from "./ScrollButton";
 
 const cards = [
   "/homepage/herocard-1.png",
@@ -73,9 +73,12 @@ export default function Hero() {
               >
                 Explore Products →
               </Link>
-              <button className="px-6 py-3 bg-white border border-gray-200 rounded-xl font-medium hover:bg-gray-50 transition">
+              <ScrollButton
+                targetId="bundles"
+                className="px-6 py-3 bg-white border border-gray-200 rounded-xl font-medium hover:bg-gray-50 transition"
+              >
                 View Bundles
-              </button>
+              </ScrollButton>
             </div>
 
             {/* TRUST */}

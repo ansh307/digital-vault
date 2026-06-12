@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ScrollButton } from "./ScrollButton";
 
 export default function CTASection() {
   return (
@@ -46,9 +47,12 @@ export default function CTASection() {
           </Link>
 
           {/* SECONDARY CTA */}
-          <button className="px-6 py-3 rounded-xl border border-gray-200 bg-white text-gray-700 font-medium hover:bg-gray-50 transition">
+          <ScrollButton
+            targetId="bundles"
+            className="px-6 py-3 rounded-xl border border-gray-200 bg-white text-gray-700 font-medium hover:bg-gray-50 transition"
+          >
             View Bundles
-          </button>
+          </ScrollButton>
         </div>
 
         {/* BACKGROUND DECOR (optional dots like your design) */}

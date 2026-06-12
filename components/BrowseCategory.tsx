@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function BrowseCategory() {
   return (
-    <section className="w-full px-6 py-6">
+    <section id="categories" className="w-full px-6 py-6">
       {/* HEADER */}
       <div className="max-w-7xl mx-auto flex items-center justify-between mb-6">
         <div>

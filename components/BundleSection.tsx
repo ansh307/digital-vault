@@ -3,7 +3,7 @@ import { Check, Infinity, ArrowRight } from "lucide-react";
 
 export default function BundleSection() {
   return (
-    <section className="w-full px-6 py-6">
+    <section id="bundles" className="w-full px-6 py-6">
       <div className="max-w-7xl mx-auto bg-white/70 backdrop-blur-xl border border-gray-200 rounded-2xl p-8 flex flex-col lg:flex-row items-center gap-10">
         {/* BG IMAGE */}
         <Image

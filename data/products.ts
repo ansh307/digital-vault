@@ -15,8 +15,8 @@ export const products = [
     discount: 45,
     image: "/product-1.jpg",
     images: [
-      "/product-1.jpg",
-      "/product-2.jpg",
+      "/product-3.jpg",
+      "/product-5.jpg",
       "/product-3.jpg",
       "/product-4.jpeg",
       "/product-5.jpg",
