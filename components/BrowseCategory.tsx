@@ -16,9 +16,9 @@ export default function BrowseCategory() {
           </p>
         </div>
 
-        <button className="flex items-center gap-2 text-sm text-indigo-600 hover:underline">
+        {/* <button className="flex items-center gap-2 text-sm text-indigo-600 hover:underline">
           View all categories <ArrowRight size={16} />
-        </button>
+        </button> */}
       </div>
 
       {/* GRID */}

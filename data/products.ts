@@ -1,9 +1,12 @@
 import { features } from "process";
+import { categories } from "./categories";
 
 export const products = [
   {
     id: "product-1",
     title: "Cinematic Video Bundle",
+    isFeatured: true,
+    category: categories[0].slug,
     desc: "50+ Overlays, Transitions, LUTs & More",
     brief:
       "  The Cinematic Video Bundle is a complete collection of professional-grade assets designed to elevate your videos to a whole new level. Perfect for filmmakers, content creators, and editors.",
@@ -28,10 +31,14 @@ export const products = [
       "Instant Download (2.4 GB)",
     ],
     compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
   },
+  
   {
     id: "product-2",
+    category: categories[1].slug,
     title: "Motion Graphics Pack",
+    isFeatured: true,
     desc: "100+ Templates for Premiere Pro & After Effects",
     brief:
       "The Motion Graphics Pack is a versatile collection of 100+ customizable templates designed to add dynamic visual elements to your videos. Perfect for content creators, marketers, and social media managers.",
@@ -54,11 +61,14 @@ export const products = [
       "Commercial License Included",
       "Instant Download (2.4 GB)",
     ],
-      compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
   },
   {
     id: "product-3",
+    category: categories[4].slug,
     title: "Sound FX Mega Pack",
+    isFeatured: true,
     desc: "10,000+ High Quality Sound Effects",
     brief:
       "The Sound FX Mega Pack is an extensive library of 10,000+ high-quality sound effects covering a wide range of categories, perfect for filmmakers, game developers, and content creators looking to enhance their audio experience.",
@@ -81,11 +91,14 @@ export const products = [
       "Commercial License Included",
       "Instant Download (2.4 GB)",
     ],
-      compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
   },
   {
     id: "product-4",
+    category: categories[1].slug,
     title: "Premium LUTs Bundle",
+    isFeatured: true,
     desc: "100+ Professional LUTs for Any Camera",
     brief:
       "The Premium LUTs Bundle is a comprehensive collection of 100+ professional-grade LUTs designed to enhance and stylize your footage with ease. Perfect for filmmakers, colorists, and content creators seeking cinematic color grading solutions.",
@@ -108,12 +121,15 @@ export const products = [
       "Commercial License Included",
       "Instant Download (2.4 GB)",
     ],
-      compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
   },
 
   {
     id: "product-5",
+    category: categories[0].slug,
     title: "Video Editing Course",
+    isFeatured: true,
     desc: "Complete Step-by-Step Editing Masterclass",
     brief:
       "The Video Editing Course is a comprehensive step-by-step masterclass designed to teach you the art of video editing, covering everything from basic techniques to advanced workflows. Perfect for aspiring editors, content creators, and filmmakers looking to elevate their editing skills.",
@@ -137,6 +153,103 @@ export const products = [
       "Commercial License Included",
       "Instant Download (2.4 GB)",
     ],
-      compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
+  },
+
+  {
+    id: "product-6",
+    category: categories[0].slug,
+    title: "Video Editing Course",
+    isFeatured: true,
+    desc: "Complete Step-by-Step Editing Masterclass",
+    brief:
+      "The Video Editing Course is a comprehensive step-by-step masterclass designed to teach you the art of video editing, covering everything from basic techniques to advanced workflows. Perfect for aspiring editors, content creators, and filmmakers looking to elevate their editing skills.",
+    price: 59,
+    originalPrice: 99,
+    discount: 40,
+    image: "/product-5.jpg",
+    images: [
+      "/product-1.jpg",
+      "/product-2.jpg",
+      "/product-3.jpg",
+      "/product-4.jpeg",
+      "/product-5.jpg",
+    ],
+    badge: "NEW",
+    tools: ["Course"],
+    features: [
+      "50+ Premium Assets",
+      "Works with Premiere Pro, After Effects, DaVinci Resolve",
+      "Lifetime Access & Free Updates",
+      "Commercial License Included",
+      "Instant Download (2.4 GB)",
+    ],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
+  },
+
+
+   {
+    id: "product-7",
+    category: categories[2].slug,
+    title: "Test template Product",
+    isFeatured: true,
+    desc: "Complete Step-by-Step Editing Masterclass",
+    brief:
+      "The Video Editing Course is a comprehensive step-by-step masterclass designed to teach you the art of video editing, covering everything from basic techniques to advanced workflows. Perfect for aspiring editors, content creators, and filmmakers looking to elevate their editing skills.",
+    price: 59,
+    originalPrice: 99,
+    discount: 40,
+    image: "/product-5.jpg",
+    images: [
+      "/product-1.jpg",
+      "/product-2.jpg",
+      "/product-3.jpg",
+      "/product-4.jpeg",
+      "/product-5.jpg",
+    ],
+    badge: "NEW",
+    tools: ["Course"],
+    features: [
+      "50+ Premium Assets",
+      "Works with Premiere Pro, After Effects, DaVinci Resolve",
+      "Lifetime Access & Free Updates",
+      "Commercial License Included",
+      "Instant Download (2.4 GB)",
+    ],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
+  },
+   {
+    id: "product-8",
+    category: categories[3].slug,
+    title: "Test Graphic Design Product",
+    isFeatured: true,
+    desc: "Complete Step-by-Step Editing Masterclass",
+    brief:
+      "The Video Editing Course is a comprehensive step-by-step masterclass designed to teach you the art of video editing, covering everything from basic techniques to advanced workflows. Perfect for aspiring editors, content creators, and filmmakers looking to elevate their editing skills.",
+    price: 59,
+    originalPrice: 99,
+    discount: 40,
+    image: "/product-5.jpg",
+    images: [
+      "/product-1.jpg",
+      "/product-2.jpg",
+      "/product-3.jpg",
+      "/product-4.jpeg",
+      "/product-5.jpg",
+    ],
+    badge: "NEW",
+    tools: ["Course"],
+    features: [
+      "50+ Premium Assets",
+      "Works with Premiere Pro, After Effects, DaVinci Resolve",
+      "Lifetime Access & Free Updates",
+      "Commercial License Included",
+      "Instant Download (2.4 GB)",
+    ],
+    compatibleWith: ["Pr", "Ae", "Lr", "Final Cut Pro", "DaVinci Resolve"],
+    createdAt: "2026-06-12T10:00:00Z",
   },
 ];

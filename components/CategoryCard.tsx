@@ -9,6 +9,7 @@ import {
   GraduationCap,
   Gift,
 } from "lucide-react";
+import Link from "next/link";
 
 const iconMap: any = {
   video: Video,
@@ -24,7 +25,10 @@ export function CategoryCard({ category }: any) {
   const Icon = iconMap[category.icon];
 
   return (
-    <div className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition cursor-pointer">
+    <Link
+      href={`/categories/${category.slug}`}
+      className="group bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition cursor-pointer"
+    >
       {/* IMAGE */}
       <div className="relative w-full h-40 overflow-hidden">
         <Image
@@ -58,6 +62,6 @@ export function CategoryCard({ category }: any) {
           className="text-gray-400 group-hover:text-indigo-600 transition"
         />
       </div>
-    </div>
+    </Link>
   );
 }

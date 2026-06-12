@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -37,9 +38,12 @@ export default function CTASection() {
         {/* RIGHT CTA (REPLACED NEWSLETTER) */}
         <div className="flex flex-col sm:flex-row items-center gap-4 z-10">
           {/* PRIMARY CTA */}
-          <button className="flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm">
+          <Link
+            href="/all-products"
+            className="flex items-center gap-2 px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition shadow-sm"
+          >
             Explore Products <ArrowRight size={16} />
-          </button>
+          </Link>
 
           {/* SECONDARY CTA */}
           <button className="px-6 py-3 rounded-xl border border-gray-200 bg-white text-gray-700 font-medium hover:bg-gray-50 transition">

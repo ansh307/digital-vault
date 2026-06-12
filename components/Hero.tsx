@@ -9,6 +9,7 @@ import {
   Star,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const cards = [
@@ -66,9 +67,12 @@ export default function Hero() {
 
             {/* BUTTONS */}
             <div className="flex gap-4 pt-6">
-              <button className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition">
+              <Link
+                href="/all-products"
+                className="px-6 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-700 transition"
+              >
                 Explore Products →
-              </button>
+              </Link>
               <button className="px-6 py-3 bg-white border border-gray-200 rounded-xl font-medium hover:bg-gray-50 transition">
                 View Bundles
               </button>

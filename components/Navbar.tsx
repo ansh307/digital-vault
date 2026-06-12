@@ -1,5 +1,6 @@
 import React from "react";
 import { Search, ChevronDown, LayoutDashboard } from "lucide-react";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -41,13 +42,17 @@ const Navbar = () => {
       {/* NAV LINKS */}
       <nav className="w-full ">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-6 text-xs font-medium text-gray-700">
-          <NavItem label="Video Bundles" />
-          <NavItem label="Presets & LUTs" />
-          <NavItem label="Templates" />
-          <NavItem label="Graphics" />
-          <NavItem label="Sound Effects" />
-          <NavItem label="Courses" />
-          <NavItem label="Freebies" isDropdown={false} />
+          <NavItem label="Video Bundles" slug="video-bundles" />
+          <NavItem label="Presets & LUTs" slug="presets-luts" />
+          <NavItem label="Templates" slug="templates" />
+          <NavItem label="Graphics" slug="graphics" />
+          <NavItem
+            label="Sound Effects"
+            slug="sound-effects"
+            isDropdown={false}
+          />
+          {/* <NavItem label="Courses" />
+          <NavItem label="Freebies" isDropdown={false} /> */}
         </div>
       </nav>
     </header>
@@ -56,16 +61,21 @@ const Navbar = () => {
 
 const NavItem = ({
   label,
+  slug,
   isDropdown = true,
 }: {
   label: string;
+  slug: string;
   isDropdown?: boolean;
 }) => {
   return (
-    <div className="flex items-center gap-1 cursor-pointer hover:text-indigo-600 transition">
+    <Link
+      href={`/categories/${slug}`}
+      className="flex items-center gap-1 cursor-pointer hover:text-indigo-600 transition"
+    >
       <span>{label}</span>
-      {isDropdown && <ChevronDown size={14} />}
-    </div>
+      {isDropdown && <ChevronDown size={14} className="-rotate-90" />}
+    </Link>
   );
 };
 

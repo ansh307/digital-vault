@@ -49,9 +49,11 @@ export default function ProductHero({ product }: { product: any }) {
         <div className="space-y-5">
           {/* TITLE */}
           <div>
-            <span className="text-xs px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium">
-              {product.badge}
-            </span>
+            {product?.badge && (
+              <span className="text-xs px-3 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium">
+                {product.badge}
+              </span>
+            )}
 
             <h1 className="text-3xl font-bold text-gray-900 mt-2">
               {product.title}
